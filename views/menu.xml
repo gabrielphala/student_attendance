@@ -4,8 +4,8 @@
 		name="Student attendance"
 		sequence="10"/>
 
-	<menuitem id="menu_attendance_student_operations"
-		name="Operations"
+	<menuitem id="menu_attendance_student_school"
+		name="School"
 		parent="menu_attendance_student_root"
 		sequence="10"/>
 </odoo>
