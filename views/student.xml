@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+	<record id="view_attendance_student_form" model="ir.ui.view">
+		<field name="name">attendance.student.form</field>
+		<field name="model">attendance.student</field>
+		<field name="arch" type="xml">
+			<form>
+				<sheet>
+					<group>
+						<field name="name"/>
+						<field name="student_no"/>
+						<field name="email_address"/>
+						<field name="gender"/>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record id="view_attendance_student_tree" model="ir.ui.view">
+		<field name="name">attendance.student.tree</field>
+		<field name="model">attendance.student</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="name"/>
+				<field name="student_no"/>
+				<field name="email_address"/>
+				<field name="gender"/>
+			</tree>
+		</field>
+	</record>
+
 	<record id="action_attendance_student" model="ir.actions.act_window">
 		<field name="name">Students</field>
 		<field name="type">ir.actions.act_window</field>
